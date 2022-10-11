@@ -1,11 +1,16 @@
 <HomeScreen>:
     BoxLayout:
+    #size: 500,500
         Button:
-            text: "Go to Screen 2"
+            text: "Play"
+            #border: (10,10,10,10)
+            #size: 100,100
             background_color : 0, 0, 1, 1
             on_press:
                 # You can define the duration of the change
                 # and the direction of the slide
                 root.manager.transition.direction = 'left'
                 root.manager.transition.duration = 1
-                root.manager.current = 'screen_two'
+                root.manager.current = 'playscreen'
+        Button:
+            text: "Instructions"
